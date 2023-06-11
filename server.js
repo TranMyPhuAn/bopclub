@@ -1,5 +1,5 @@
 ﻿//Rik.fan - chia sẻ học hỏi
-// require('dotenv').config();
+require("dotenv").config();
 var cors = require("cors");
 let Telegram = require("node-telegram-bot-api");
 let TelegramToken = "5180271425:AAFGUtqkl4_laRpVksB4YTCswsx63sLBDew";
