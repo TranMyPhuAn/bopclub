@@ -1,11 +1,9 @@
 FROM node:12
 
-WORKDIR /app
+WORKDIR /usr/src/app
 
 COPY package.json .
 COPY package-lock.json .
-
-RUN npm install
 
 COPY app ./app
 COPY config ./config
@@ -34,6 +32,10 @@ COPY socketUsers.js .
 COPY tele.js .
 COPY update.js .
 COPY version_generator.js .
+
+RUN npm install
+
+COPY . .
 
 EXPOSE 80
 
