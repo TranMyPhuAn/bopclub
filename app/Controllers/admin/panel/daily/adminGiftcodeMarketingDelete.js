@@ -1,7 +1,7 @@
 var GiftCode = require('../../../../Models/GiftCode');
 module.exports = function(req, res) {
     const  code  = req.query.code;
-    console.log(code);
+    // console.log(code);
     if(code){
     GiftCode.deleteOne({code:code},function(err,result){
       if(err){

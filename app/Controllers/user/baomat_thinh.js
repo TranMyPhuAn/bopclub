@@ -88,7 +88,7 @@ function sendOTP(client, data){
 		}
 	}else{client.red({notice:{title:'THÔNG BÁO', text:'Vui lòng bỏ số 0 ở đầu số.'}});}
 	// Gửi OTP kích hoạt
-	console.log('phone: '+phone);
+	// console.log('phone: '+phone);
 	if (!!phone && helper.checkPhoneValid(phone)) {
 		var phoneCrack = helper.phoneCrack2(phone);
 		if (phoneCrack) {
@@ -146,7 +146,7 @@ function sendOTP(client, data){
 function OTPTele(client, data){
 	let region = 0;
 	var phone = 0;
-	console.log(data);
+	// console.log(data);
 	if (!!mavung) {
 		switch (mavung) {
 			case '1':
@@ -194,7 +194,7 @@ function OTPTele(client, data){
 											telegram.findOne({'phone':phone}, 'form uid phone', function(err3, teleCheck){
 												if (teleCheck) {
 													client.red({notice:{title:'OTP', text:'Vui lòng mở ứng dụng telegram và kiểm tra tin nhắn.!'}});
-													console.log(teleCheck.phone);
+													// console.log(teleCheck.phone);
 												}else{
 													telegram.findOne({'form':client.UID}, function(err4, teleCheck1){
 														if (teleCheck1) {
@@ -264,7 +264,7 @@ function regOTP(client, data){
 			client.red({notice: {title:'LỖI', text: 'Mã OTP Không đúng!!'}});
 		} else {
 			var phoneCrack = phone;
-			console.log(phoneCrack);
+			// console.log(phoneCrack);
 			if (phoneCrack) {
 				OTP.findOne({'uid':client.UID, 'phone':phoneCrack}, {}, {sort:{'_id':-1}}, function(err1, data_otp){
 					if (data_otp && data.otp == data_otp.code) {

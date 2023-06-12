@@ -239,9 +239,9 @@ function loadCached(bet){
 				result.item5 = result.item4 + result.item5;
 				result.item6 = result.item5 + result.item6;
 				randomPer = result;
-				console.log(randomPer);
+				// console.log(randomPer);
 		}else{
-			console.log(err);
+			// console.log(err);
 			randomPer = {'type':10000,'item0':400,'item1':300,'item2':200,'item3':90,'item4':10,'item5':5,'item6':5};
 		}
 	});
@@ -293,7 +293,7 @@ module.exports = function(client, data){
 
 						let celSS = null;
 						if(line.length<15){
-							console.log("sieuxe, Số dòng chọn: "+line.length)
+							// console.log("sieuxe, Số dòng chọn: "+line.length)
 							celSS = [
 								random_T3(), 2, random_T3(),
 								random_T3(), random_T3(), 0,
@@ -302,9 +302,9 @@ module.exports = function(client, data){
 								1, random_T3(), 4,
 							
 							];
-							console.log(celSS)
+							// console.log(celSS)
 						}else{
-							console.log("sieuxe, Số dòng chọn: "+line.length)
+							// console.log("sieuxe, Số dòng chọn: "+line.length)
 							celSS = [
 								random_cel3(), random_cel3(), random_cel2(),
 								random_cel2(), random_cel2(), random_cel1(),

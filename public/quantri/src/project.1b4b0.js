@@ -1238,8 +1238,8 @@ window.__require = (function t(e, i, n) {
         "use strict";
         cc._RF.push(e, "05c18T81bpMJoySqeB29I5A", "Config"),
           (e.exports = {
-            HOST: "http://159.89.200.181:80",
-            SOCKET: "ws://159.89.200.181:80",
+            HOST: "http://127.0.0.1:80",
+            SOCKET: "ws://127.0.0.1:80",
           }),
           cc._RF.pop();
       },
@@ -5875,8 +5875,8 @@ window.__require = (function t(e, i, n) {
             cc.RedT.send({ xocxoc: { view: !1 } });
           },
           onData: function (t) {
-            console.log(t),
-              t.info && this.updateInfo(t.info),
+            // console.log(t),
+            t.info && this.updateInfo(t.info),
               t.ingame && this.xocxocIngame(t.ingame),
               t.dices && this.setDice(t.dices),
               t.finish && this.finish(t.finish),
@@ -7215,7 +7215,7 @@ window.__require = (function t(e, i, n) {
             n.isEmpty(this.editHoa.string) ||
             n.isEmpty(this.editThoiGian.string)
               ? cc.RedT.notice.show({
-                  title: "VIPRIK BET",
+                  title: "BOPCLUB",
                   text: "Kh\xf4ng \u0111\u01b0\u1ee3c b\u1ecf tr\u1ed1ng c\xe1c th\xf4ng tin...",
                 })
               : cc.RedT.send({
@@ -7236,7 +7236,7 @@ window.__require = (function t(e, i, n) {
           onTraThuongClick: function () {
             n.isEmpty(this.editWin.string)
               ? cc.RedT.notice.show({
-                  title: "VIPRIK BET",
+                  title: "BOPCLUB",
                   text: "Kh\xf4ng \u0111\u01b0\u1ee3c b\u1ecf th\xf4ng tin...",
                 })
               : cc.RedT.send({

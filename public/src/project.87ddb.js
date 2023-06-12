@@ -8091,8 +8091,8 @@ window.__require = (function t(e, i, n) {
         "use strict";
         cc._RF.push(e, "05c18T81bpMJoySqeB29I5A", "Config"),
           (e.exports = {
-            HOST: "http://159.89.200.181:80",
-            SOCKET: "ws://159.89.200.181:80",
+            HOST: "http://127.0.0.1:80",
+            SOCKET: "ws://127.0.0.1:80",
           }),
           cc._RF.pop();
       },
@@ -8207,7 +8207,7 @@ window.__require = (function t(e, i, n) {
             labelStatus: cc.Label,
             captcha: cc.EditBox,
             capchaSprite: cc.Sprite,
-            url: "https://t.me/go6688bot",
+            url: "https://t.me/hotrobopclub_bot",
           },
           onEnable: function () {
             this.reCaptcha();
@@ -8269,7 +8269,7 @@ window.__require = (function t(e, i, n) {
             cc.RedT.send({ captcha: "regOTP" });
           },
           openOTPApp: function () {
-            cc.sys.openURL("https://t.me/go6688bot");
+            cc.sys.openURL("https://t.me/hotrobopclub_bot");
           },
         }),
           cc._RF.pop();
@@ -12440,10 +12440,10 @@ window.__require = (function t(e, i, n) {
             cc.RedT.audio.playUnClick();
           },
           fanpage: function () {
-            cc.sys.openURL("https://rik.fan");
+            cc.sys.openURL("https://www.facebook.com/");
           },
           group: function () {
-            cc.sys.openURL("https://rik.fan");
+            cc.sys.openURL("https://www.facebook.com/");
           },
           ios: function () {
             cc.sys.openURL("https://rik.fan");

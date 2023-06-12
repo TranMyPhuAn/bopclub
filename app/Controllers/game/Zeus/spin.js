@@ -370,7 +370,7 @@ module.exports = function(client, data){
 						let huUpdate   = {bet:addQuy, hu:0};
 						let celSS = null;
 						if(line.length<15){
-							console.log("Zeus, Số dòng chọn: "+line.length)
+							// console.log("Zeus, Số dòng chọn: "+line.length)
 							celSS = [
 								random_T3(), 2, random_T3(),
 								random_T3(), random_T3(), 0,
@@ -379,9 +379,9 @@ module.exports = function(client, data){
 								1, random_T3(), 9,
 							
 							];
-							console.log(celSS)
+							// console.log(celSS)
 						}else{
-							console.log("Zeus, Số dòng chọn: "+line.length)
+							// console.log("Zeus, Số dòng chọn: "+line.length)
 							celSS = [
 								random_T3(), 2, random_T3(),
 								random_T3(), random_T3(), 0,

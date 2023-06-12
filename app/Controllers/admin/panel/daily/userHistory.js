@@ -26,7 +26,7 @@ var Helpers = require('../../../../Helpers/Helpers');
 
 module.exports = function(req, res) {
     var { query } = req || {};
-    console.log('query', query);
+    // console.log('query', query);
     var { id, type } = query || {};
     var filter = {};
     Promise.all([
