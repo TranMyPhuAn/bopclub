@@ -4,7 +4,7 @@ const Bankww = require('../../../../Models/Bank/Bank_history');
 module.exports = function(client, data){
 	var sotien = 0;
 	
-	console.log(data);
+	// console.log(data);
 	if(!!data){
 		Bankww.countDocuments({type:1, status:0}).exec(function(err, total){
 				var getCuoc = Bankww.find({type:1, status:0}, {}, function(error, result){

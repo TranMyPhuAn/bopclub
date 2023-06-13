@@ -1,17 +1,16 @@
+let messages = require("./messages");
 
-let messages = require('./messages');
+var tab_DaiLy = require("../Models/DaiLy");
+let TelegramDaiLyBalance = require("../Models/TelegramDaiLyBalance");
+let Phone = require("../Models/Phone");
+let helpers = require("../Helpers/Helpers");
+var UserInfo = require("../Models/UserInfo");
 
-var tab_DaiLy = require('../Models/DaiLy');
-let TelegramDaiLyBalance = require('../Models/TelegramDaiLyBalance');
-let Phone    = require('../Models/Phone');
-let helpers  = require('../Helpers/Helpers');
-var UserInfo  = require('../Models/UserInfo');
-
-module.exports = function(redT) {
-	redT.telegram.on('message', (msg) => {
-		messages(redT, msg);
-	});
-	/*
+module.exports = function (redT) {
+  redT.telegram.on("message", (msg) => {
+    messages(redT, msg);
+  });
+  /*
 	redT.telegram_daily.on('message',(msg)=>{
 		
         console.log(msg);
@@ -103,4 +102,4 @@ module.exports = function(redT) {
             });
         }
     });*/
-}
+};

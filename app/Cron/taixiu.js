@@ -1252,7 +1252,7 @@ let playGame = function () {
           function (err, data) {
             if (!!data) {
               var thongbao2 =
-                "club333 Cổng game xanh chín uy tín, Rút tiền nhanh 24/7";
+                "BOPCLUB Cổng game xanh chín uy tín, Rút tiền nhanh 24/7";
               ThongBao.updateOne({ hienthitb: thongbao2 }).exec();
             }
           }

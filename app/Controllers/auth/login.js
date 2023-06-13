@@ -28,7 +28,7 @@ module.exports = function(req, res) {
             Users.findOne({ 'local.username': username })
         ])
         .then(response => {
-              console.log("");
+            //   console.log("");
                         //console.log(response);
                         //console.log("");
 

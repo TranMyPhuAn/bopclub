@@ -103,7 +103,7 @@ var chat = function (client, str) {
           client.red({
             taixiu: {
               chat: {
-                message: { user: "***Số dư không đủ để chát***", value: "!" },
+                message: { user: "***Số dư không đủ để chat***", value: "!" },
               },
             },
           });
@@ -385,7 +385,7 @@ var getuser_play = function (client, data) {
 };
 var get_nohutxv = function (client, data) {
   if (!!data && !!data.phien) {
-    console.log(data);
+    // console.log(data);
     var phien = data.phien >> 0;
     var getPhien = TXPhien.findOne({ id: phien }).exec();
     //var getCuoc  = TXCuoc.find({phien:phien, taixiu:true, red:true}, null, {sort:{'_id':1}}).exec();
@@ -585,7 +585,7 @@ var get_phien = function (client, data) {
   }
 };
 var get_nohutx = async function (client, data) {
-  console.log(data);
+  // console.log(data);
   var phienis = data.phien;
   var gettonguser = 0;
   if (phienis == 0) {

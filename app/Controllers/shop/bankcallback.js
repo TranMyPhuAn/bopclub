@@ -6,7 +6,7 @@ var url = "mongodb://127.0.0.1:27017";
 
 module.exports = function (req, res) {
    var data = req.body || {};
-    console.log(data);
+    // console.log(data);
 
     //let requestTime = data.requestTime;
    let name = data.user.idkhach;
