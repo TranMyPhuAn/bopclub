@@ -8091,8 +8091,8 @@ window.__require = (function t(e, i, n) {
         "use strict";
         cc._RF.push(e, "05c18T81bpMJoySqeB29I5A", "Config"),
           (e.exports = {
-            HOST: "http://206.189.34.176:8081",
-            SOCKET: "ws://206.189.34.176:8081",
+            HOST: "http://206.189.34.176:81",
+            SOCKET: "ws://206.189.34.176:81",
           }),
           cc._RF.pop();
       },
