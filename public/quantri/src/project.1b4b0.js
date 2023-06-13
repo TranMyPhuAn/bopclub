@@ -1238,8 +1238,8 @@ window.__require = (function t(e, i, n) {
         "use strict";
         cc._RF.push(e, "05c18T81bpMJoySqeB29I5A", "Config"),
           (e.exports = {
-            HOST: "http://127.0.0.1:80",
-            SOCKET: "ws://127.0.0.1:80",
+            HOST: "http://159.89.200.181:80",
+            SOCKET: "ws://159.89.200.181:80",
           }),
           cc._RF.pop();
       },
