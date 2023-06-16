@@ -1160,8 +1160,8 @@ let playGame = function () {
       { game: "taixiumd5", type: 1 },
       "hutx",
       function (err, datahu) {
-        var tienhu = datahu;
-        // var tienhu = datahu.hutx;
+        // var tienhu = datahu;
+        var tienhu = datahu.hutx;
         let home;
         home = { taixiu: { hutx: { monney: tienhu } } };
         // home = {hutxmain: {monney:tienhu}};
