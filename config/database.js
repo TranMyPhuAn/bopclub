@@ -8,6 +8,6 @@ module.exports = {
     //'dbName': 'admin', //
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    autoIndex: false,
+    // autoIndex: false,
   },
 };
